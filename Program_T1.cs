@@ -13,30 +13,30 @@ switch (choice)
         Console.WriteLine("Такого варіанту немає");
         break;
 }
-for(int i = 0; i < numbers.Count; i++)
+for (int i = 0; i < numbers.Count; i++)
 {
     Console.Write(numbers[i] + "\t");
 }
 Console.WriteLine();
-for(int i = 0; i < numbers.Count; i++)
+for (int i = 0; i < numbers.Count; i++)
 {
     numbers[i] = -numbers[i];
 }
 numbers.Sort();
-for(int i = 0; i < numbers.Count; i++)
+for (int i = 0; i < numbers.Count; i++)
 {
     numbers[i] = -numbers[i];
 }
-for(int i = 0; i < numbers.Count; i++)
+for (int i = 0; i < numbers.Count; i++)
 {
     Console.Write(numbers[i] + "\t");
 }
-static int numsQuantity(string message)
+static int NumsQuantity(string message)
 {
     while (true)
     {
         Console.WriteLine(message);
-        try 
+        try
         {
             int ListQuantity = int.Parse(Console.ReadLine());
             return ListQuantity;
@@ -69,7 +69,7 @@ static void UserType(List<int> numbers, int numsQuantity)
 static void AutoType(List<int> numbers, int numsQuantity)
 {
     Random random = new Random();
-    for(int i = 0; i < numsQuantity; i++)
+    for (int i = 0; i < numsQuantity; i++)
     {
         numbers.Add(random.Next(-10, 10));
     }
